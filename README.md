@@ -35,6 +35,7 @@ while True:
 ![arp](https://github.com/user-attachments/assets/ee4fa829-9cd8-4eb7-93d1-820ae2eb8fac)
 
 ## PROGRAM - RARP
+```
 import socket
 s=socket.socket()
 s.connect(('localhost',8880))
@@ -42,6 +43,7 @@ while True:
     ip=input("Enter Logical Address:")
     s.send(ip.encode())
     print("MAC address",s.recv(1024).decode())
+```
 
 ## OUPUT -RARP
 ![rarp](https://github.com/user-attachments/assets/0ed67cf9-aa6f-4e42-b6e8-2f4d1722b81b)
